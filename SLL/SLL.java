@@ -98,14 +98,6 @@ public class SLL
 		}
 	}
 	
-	public void InitializeList(int[] arr)
-	{
-		for(int elem: arr)
-		{
-			AddLast(elem);
-		}
-	}
-	
 	public int FindNthElement(int n) throws Exception
 	{
 		if( Head == null || n < 1)
@@ -324,6 +316,5 @@ public class SLL
 		}
 		
 		Head = listR.Head;
-	}
-	
+	}	
 }

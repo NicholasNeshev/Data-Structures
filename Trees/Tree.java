@@ -25,9 +25,9 @@ public class Tree {
 			return;
 		}
 		
-		TraverseTreeLNR( root.GetLeft(), storage );
+		TraverseTreeLeftNodeRight( root.GetLeft(), storage );
 		storage.add( root.GetValue() );
-		TraverseTreeLNR( root.GetRight(), storage );
+		TraverseTreeLeftNodeRight( root.GetRight(), storage );
 	}
 	
 	public void PrintLineByLine()

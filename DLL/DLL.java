@@ -1,6 +1,6 @@
 package data.structures;
 
-//Doubly Linked List (DLL)
+// Doubly Linked List (DLL)
 public class DLL {
 	
 	private DLN Head = null;

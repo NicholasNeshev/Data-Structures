@@ -1,6 +1,6 @@
 package data.structures;
 
-//Doubly Linked Node
+// Doubly Linked Node
 public class DLN {
 
 	private int Value;

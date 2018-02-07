@@ -1,5 +1,6 @@
 package data.structures;
 
+// Singly Linked Node (SLN)
 public class SLN 
 {
 	private int Value;

@@ -2,6 +2,7 @@ package data.structures;
 
 import java.util.Stack;
 
+// Singly Linked List (SLL)
 public class SLL
 {
 	private SLN Head = null;
@@ -48,26 +49,6 @@ public class SLL
 		 }
 	}
 	
-	public void AddLastLoop(int number)
-	{
-		 SLN node = new SLN();
-		 node.SetValue(number);
-		 node.SetNext(Head);
-		 
-		 if(Head == null)
-		 {
-			 Head = node;
-		 }
-		 else
-		 { 
-			 SLN scroll = Head;
-			 while(scroll.GetNext() != null)
-			 {
-				 scroll = scroll.GetNext();
-			 }
-			 scroll.SetNext(node);
-		 }
-	}
 	
 	public void AddSorted(int number)
 	{
@@ -118,27 +99,6 @@ public class SLL
 		}
 	}
 	
-	public void PrintLoop( int cycles )
-	{
-		SLN scroll = Head;
-		for( int i = 0; i < cycles; i++)
-		{
-			System.out.println(scroll.GetValue());
-			scroll = scroll.GetNext();
-		}
-	}
-	
-	public void InitializeListOne()
-	{
-		AddLast(3);
-		AddLast(4);
-		AddLast(8);
-		//AddLast(1);
-		//AddLast(6);
-		//AddLast(2);
-		//AddLast(5);
-	}
-	
 	public void InitializeList(int[] arr)
 	{
 		for(int elem: arr)
@@ -147,16 +107,6 @@ public class SLL
 		}
 	}
 	
-	public void InitializeListCircle()  
-	{
-		AddLast(1);
-		AddLast(2);
-		AddLast(3);
-		AddLast(4);
-		AddLast(5);
-		AddLast(6);
-		AddLastLoop(7);
-	}
 	public int FindNthElement(int n) throws Exception
 	{
 		if( Head == null || n < 1)
@@ -252,7 +202,7 @@ public class SLL
 		}
 	}
 	
-	public int FindFromLastNthElement( int n) throws Exception
+	public int FindNthToLastElement( int n) throws Exception
 	{
 		if( Head == null || n < 1)
 		{
@@ -285,7 +235,7 @@ public class SLL
 		throw new Exception("Out of bounds");
 	}
 	
-	public void DeleteNthElementNoHead( SLN node )
+	public void DeleteElementNoHead( SLN node )
 	{		
 		
 		node.SetValue(node.GetNext().GetValue());
@@ -317,7 +267,7 @@ public class SLL
 		return slow.GetValue();
 	}
 	
-	public boolean IsLoop()
+	public boolean IsCircularList()
 	{
 		SLN slow = Head;
 		SLN fast = Head;
@@ -336,7 +286,7 @@ public class SLL
 		return false;
 	}
 	
-	public void ReverseList() throws Exception
+	public void ReverseListWithStack()
 	{
 		if( Head == null || Head.GetNext() == null )
 		{
@@ -372,8 +322,6 @@ public class SLL
 			}			
 
 			scroll = node;
-			
-			throw new Exception("hi");
 		}
 		
 		Head = listR.Head;

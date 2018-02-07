@@ -2,6 +2,7 @@ package data.structures;
 
 import java.util.*;
 
+// Custom queue
 public class SelfQueue {
 	
 	private Stack<Integer> myStack1 = new Stack<Integer>();

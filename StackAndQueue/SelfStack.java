@@ -3,6 +3,7 @@ package data.structures;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// Custom stack
 public class SelfStack {
 	
 	private Queue<Integer> myQueue1 = new LinkedList<Integer>();

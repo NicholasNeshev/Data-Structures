@@ -1,2 +1,2 @@
 # Data-Structures
-Building common data structures and basic methods for them
+Building common data structures and basic methods

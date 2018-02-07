@@ -2,6 +2,7 @@ package data.structures;
 import java.util.List;
 import java.util.*;
 
+// Tree
 public class Tree {
 	
 	private TreeNode Root = null;
@@ -16,19 +17,7 @@ public class Tree {
 		this.Root = treeNode;
 	}
 	
-	public void InitializeTree()
-	{
-		TreeNode TN1 = new TreeNode( 1, null, null);
-		TreeNode TN4 = new TreeNode( 4, null, null);
-		TreeNode TN3 = new TreeNode( 3, TN1, TN4);
-		TreeNode TN7 = new TreeNode( 7, null, null);
-		TreeNode TN5 = new TreeNode( 5, TN3, TN7);
-		TreeNode TN15 = new TreeNode( 15, null, null);
-		TreeNode TN10 = new TreeNode( 10, TN5, TN15);
-		SetRoot(TN10);
-	}
-	
-	public void TraverseTreeLNR( TreeNode root, List<Integer> storage )
+	public void TraverseTreeLeftNodeRight( TreeNode root, List<Integer> storage )
 	{
 		
 		if( root == null )

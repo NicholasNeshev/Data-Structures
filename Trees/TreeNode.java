@@ -1,5 +1,6 @@
 package data.structures;
 
+// Node
 public class TreeNode {
 	
 	private int Value;

@@ -49,7 +49,6 @@ public class SLL
 		 }
 	}
 	
-	
 	public void AddSorted(int number)
 	{
 		SLN node = new SLN();

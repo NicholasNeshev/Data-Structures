@@ -1,2 +1,2 @@
 ## Trees
-* Parent nodes that link to two child nodes
+* Parent nodes that link to left and right child nodes
